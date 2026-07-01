@@ -1,0 +1,30 @@
+{
+  "name": "manatosh-maiti-monorepo",
+  "version": "1.0.0",
+  "description": "Consolidated monorepo for Manatosh Maiti's projects",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "auto-hire-framework"
+  ],
+  "scripts": {
+    "dev:autohire": "cd auto-hire-framework && npm run dev",
+    "build:all": "npm run build --workspaces",
+    "build:autohire": "cd auto-hire-framework && npm run build",
+    "lint:all": "npm run lint --workspaces",
+    "lint:autohire": "cd auto-hire-framework && npm run lint",
+    "clean:all": "npm run clean --workspaces",
+    "clean:autohire": "cd auto-hire-framework && npm run clean",
+    "install:all": "npm install",
+    "test:all": "npm run test --workspaces --if-present"
+  },
+  "keywords": [
+    "monorepo",
+    "react",
+    "vite",
+    "firebase",
+    "gemini-api"
+  ],
+  "author": "Manatosh Maiti",
+  "license": "MIT"
+}
